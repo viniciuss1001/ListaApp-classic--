@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app de supermercado</title>
+    <style>
+        header{
+            padding: 1rem;
+            width: 100%;
+            height: auto;
+            background: royalblue;
+            color: #fff;
+            margin: 0 auto;
+        }
+        .lista{
+            padding: 1rem;
+            text-align: center;
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            height: fit-content;
+            background-color: beige;
+            border-radius: 1rem;
+
+        }
+        .lista input{
+            margin: 1rem auto;
+            border-radius: .5rem;
+            padding: 1rem;
+            color: #000000;
+            width: 75%;
+        }
+        .lista .cad{
+            color: #fff;
+            background-color: royalblue;
+            cursor: pointer;
+            width: 75%;
+            border: none;
+        }
+        .lista-produtos{
+            margin: 1rem auto;
+            padding: 1rem;
+            border-radius: .5rem;
+            display: flex;
+            flex-direction: column;
+            background: rgba(99, 104, 118, 0.629);
+            color: #ffff;
+            width: 45%;
+            height: fit-content;
+
+        }
+        .lista-produtos .produto-single{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h2>App lista de supermercado</h2>
+    </header>
+    <div class="lista">
+        <input type="text" name="nome_produto" id="nomeProduto" placeholder="Nome do produto" >
+        <input type="number" name="valor_produto" placeholder="Valor do produto" id="valorProduto">
+        <input type="submit" value="Anotar" placeholder="Cadastrar" class="cad">
+    </div>
+    <div class="lista-produtos">
+        <h4>Lista de produtos</h4>
+    </div>
+    <input type="submit" value="Limpar lista" class="clear">
+    <div class="soma">
+        <h1>Valor total: 00</h1>
+    </div>
+    <script src="superMApp.js"></script>
+</body>
+</html>
